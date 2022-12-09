@@ -5,7 +5,7 @@
 // 04 05 06
 // 07 08 09 10
 // Parameters : height → triangle height
-const triangle = (height) => {              // triangle merupakan fungsi tetap setelah melalui const. height merupakan parameter dari fungsi triangle.
+const triangle = (height) => {                // triangle merupakan fungsi tetap setelah melalui const. height merupakan parameter dari fungsi triangle.
     let result = "";                          // result merupakan string kosong untuk menampung value variable dari fungsi triangle
     let temp = 0;                             // temp berguna untuk menyimpan nomor yang akan di print
     for (let i = 0; i < height; i++) {        // loop height hingga sekian kali (sesuai value height)
@@ -27,12 +27,12 @@ const triangle = (height) => {              // triangle merupakan fungsi tetap s
   // replace multiples of ú with "Fizz", multiples of ü with "Buzz", multiples of ú and ü with
   // "FizzBuzz".
   // Parameters : n → total looping
-  function fizzBuzz(n) {                                                                                      // definisikan fungsi fizzBuzz dengan variable n (n pada saat console log dapat diubah sesuka hati)
-    let j = "";                                                                                               // j adalah empty string untuk menampung value yang dihasilkan setelah for loop (temp variable)
-    for (let i = 0; i < n; ) {                                                                                // melakukan looping dari 0 -> n(input)
-      j += (++i % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || `${i}`;                                 // menggunakan ternary operator dimana apabila boolean bersifat true, maka value yang akan di output adalah
-    }                                                                                                         // value di sisi kanan. dalam hal ini fizz/buzz. apabila kedua boolean true maka akan ditampilkan fizzbuzz
-    return j;                                                                                                 // mengembalikan value j
+  function fizzBuzz(n) {                                              // definisikan fungsi fizzBuzz dengan variable n (n pada saat console log dapat diubah sesuka hati)
+    let j = "";                                                       // j adalah empty string untuk menampung value yang dihasilkan setelah for loop (temp variable)
+    for (let i = 0; i < n; ) {                                        // melakukan looping dari 0 -> n(input)
+      j += (++i % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || `${i}`; // menggunakan ternary operator dimana jika boolean bersifat true, value yang akan di output adalah
+    }                                                                 // value di sisi kanan. dalam hal ini fizz/buzz. jika kedua boolean true maka akan ditampilkan fizzbuzz
+    return j;                                                         // mengembalikan value j
   }
   
   console.log(fizzBuzz(16));
@@ -49,14 +49,14 @@ const triangle = (height) => {              // triangle merupakan fungsi tetap s
   
   
   
-  function calculateBMI(w,h) {                              // menentukan nama fungsi dan parameter fungsi
-  let BMI = w / h ** 2;                                     // definisikan rumus BMI yaitu w dibagi dengan h pangkat 2
+  function calculateBMI(w,h) {                      // menentukan nama fungsi dan parameter fungsi
+  let BMI = w / h ** 2;                             // definisikan rumus BMI yaitu w dibagi dengan h pangkat 2
   console.log(BMI);
-    if (BMI > 39.9) {                                       // menentukan kondisi dengan parameter tertentu dalam hal ini jika nilai dari BMI lebih besar dari 39.9, maka
-      message = "obesity";                                  // akan memberi output "obesity"
+    if (BMI > 39.9) {                               // menentukan kondisi dengan parameter tertentu dalam hal ini jika nilai dari BMI lebih besar dari 39.9, maka
+      message = "obesity";                          // akan memberi output "obesity"
       console.log(message);                   
-    } else if (BMI >= 30.0) {                               // apabila kriteria pada kondisi if tidak terpenuhi maka akan dilanjutkan dengan statement else if berikutnya
-      message = "very overweight";                          // dst.
+    } else if (BMI >= 30.0) {                       // apabila kriteria pada kondisi if tidak terpenuhi maka akan dilanjutkan dengan statement else if berikutnya
+      message = "very overweight";                  // dst.
       console.log(message);                   
     } else if (BMI >= 25.0) {                  
       message = "overweight";                  
