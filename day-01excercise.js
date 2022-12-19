@@ -1,3 +1,5 @@
+// day-01excercise.js
+// Excercise Day 1
 // 1. Area of Rectangle
 let l = 10;
 let w = 5;
