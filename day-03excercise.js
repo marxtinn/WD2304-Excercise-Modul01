@@ -1,3 +1,5 @@
+// day-03excercise.js
+
 //EXERCISE 3
 
 // 1. Display multipication table of a given integer, ex: 9 x 1, 9 x 2, ..., 9 x 10.
@@ -16,8 +18,7 @@
 //     console.log('the word ' + word + ' is not a palindrome');
 // };
 
-
-// 3. Convert centimeter to kilometer. 
+// 3. Convert centimeter to kilometer.
 // let cm = 1000;
 // const km = cm / 100000;
 // console.log(cm + " cm = " + km + " km");
@@ -66,20 +67,18 @@
 // contoh lain
 let result = "";
 for (let i = 0; i < 5; i++) {
+  for (let a = 0; a < 5; a++) {
+    // if (a == 3) {
+    //     result += "ini index ke 2"
+    //     result += ", "
+    //     break;
+    // }
 
-    for (let a = 0; a < 5;a++){
-
-        // if (a == 3) {
-        //     result += "ini index ke 2"
-        //     result += ", "
-        //     break;
-        // }
-
-        if (i = a)  {
-            result += `index i dan a adalah ${i}`
-            result += ", "
-        }
+    if ((i = a)) {
+      result += `index i dan a adalah ${i}`;
+      result += ", ";
     }
-    result += i + ", "
+  }
+  result += i + ", ";
 }
 console.log(result);

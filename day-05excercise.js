@@ -1,3 +1,5 @@
+// day-05excercise.js
+
 // Excercise 2
 
 // 1. Write a function to get the lowest, highest and average value in the array (with and without sort function).
